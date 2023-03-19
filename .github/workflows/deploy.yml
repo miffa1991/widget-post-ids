@@ -10,6 +10,6 @@ jobs:
       - name: Upload to server
         uses: lattepress/WordPress-Site-Deploy@stable
         with:
-          url: SFTP_HOST
+          url: ${{ secrets.SFTP_HOST }}
           username: "zx407606_dev"
           password: "EU7zG8dvBz72"
