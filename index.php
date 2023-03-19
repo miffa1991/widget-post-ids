@@ -18,12 +18,6 @@ class Miff_IDs_Post extends WP_Widget {
 		);
 	}
   
-  // public function is_preview() {
-	// global $wp_customize;
-  // // $wp_customize = false;
-	//   return isset( $wp_customize ) && $wp_customize->is_preview();
-  // }
-
 	public function widget( $args, $instance ) {
 		// outputs the content of the widget
 		extract( $args );
