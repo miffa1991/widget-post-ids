@@ -10,7 +10,7 @@ jobs:
       - name: Upload to server
         uses: lattepress/WordPress-Site-Deploy@stable
         with:
-          url: "sftp://zx407606@zx407606.ftp.tools:22/"
+          url: "21://zx407606.ftp.tools:21/"
           username: "zx407606"
-          password: "%f5_Gb7R"
+          password: "EU7zG8dvBz72"
           options: --auto-init --insecure -vv
