@@ -7,6 +7,7 @@ Description: Display posts by id
 */
 
 
+
 class Miff_IDs_Post extends WP_Widget {
 
 	public function __construct() {
