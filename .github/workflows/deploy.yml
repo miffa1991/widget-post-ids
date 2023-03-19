@@ -24,5 +24,5 @@ jobs:
           port: ${{ secrets.SFTP_PORT }}
           user: ${{ secrets.SFTP_USER }}
           pass: ${{ secrets.SFTP_PASS }}
-          remoteDir: '/get-studio.com.ua/test/wp-content/plugins/miff-posts-by-id/'
+          remoteDir: '/home/zx407606/get-studio.com.ua/test/wp-content/plugins/miff-posts-by-id/'
           options: '--verbose'
