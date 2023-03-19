@@ -24,5 +24,5 @@ jobs:
           port: ${{ secrets.SFTP_PORT }}
           user: ${{ secrets.SFTP_USER }}
           pass: ${{ secrets.SFTP_PASS }}
-          remoteDir: '/demo-www/wp-content/themes/my-theme'
+          remoteDir: '/'
           options: '--verbose'
