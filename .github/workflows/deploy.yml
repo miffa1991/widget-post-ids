@@ -1,30 +1,16 @@
-name: deploy
-on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - 'bin/**'
-      - 'README.md'
+name: CI
+on: push
+
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        # Checkout our repository under `${GITHUB_WORKSPACE}`,
-        # so our workflow can access it
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v2
+
+      - name: Upload to server
+        uses: lattepress/WordPress-Site-Deploy@stable
         with:
-          # Fetch the entire Git history
-          fetch-depth: 0
-      - name: Deploy via SFTP
-        uses: pressidium/lftp-mirror-action@v1
-        with:
-          host: ${{ secrets.SFTP_HOST }}
-          port: ${{ secrets.SFTP_PORT }}
-          user: ${{ secrets.SFTP_USER }}
-          pass: ${{ secrets.SFTP_PASS }}
-          remoteDir: '/home/zx407606/get-studio.com.ua/test/wp-content/plugins/'
-          options: '--verbose'
-          forceSSL: false
-          verifyCertificate: false
+          url: "sftp://zx407606@zx407606.ftp.tools:22/"
+          username: "zx407606"
+          password: "%f5_Gb7R"
+          options: --auto-init --insecure -vv
