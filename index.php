@@ -6,6 +6,7 @@ Description: Display posts by id
 * Author: Miffka
 */
 
+
 class Miff_IDs_Post extends WP_Widget {
 
 	public function __construct() {
