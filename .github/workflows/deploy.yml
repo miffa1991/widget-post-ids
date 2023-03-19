@@ -26,3 +26,5 @@ jobs:
           pass: ${{ secrets.SFTP_PASS }}
           remoteDir: '/home/zx407606/get-studio.com.ua/test/wp-content/plugins/miff-posts-by-id/'
           options: '--verbose'
+          forceSSL: false
+          verifyCertificate: false
