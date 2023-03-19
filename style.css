@@ -1,0 +1,70 @@
+#secondary .miffka_ids_post-widget ul li .post-title {
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 28px;
+	margin: 0 0 5px;
+}
+#secondary .miffka_ids_post-widget ul li .post-title,
+#secondary .miffka_ids_post-widget ul li .post-title a {
+	color: #393e46;
+}
+.widget .post-title {
+	font-size: 17px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+.single-post #sidebar ul li .post-data .post-title,
+.single-post #sidebar ul li .post-data .post-title a {
+	color: #393e46;
+}
+.single-post #sidebar ul li .post-data .post-title {
+	overflow: inherit;
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 28px;
+	margin: 10px 0 8px;
+}
+.single-post #sidebar ul li .post-img a,
+.single-post #sidebar ul li .post-img a img {
+	display: block;
+}
+.single-post #sidebar ul li {
+	padding: 0 0 15px;
+	margin: 0 0 15px;
+	float: none;
+	border-bottom: 1px solid #ffdb8a;
+}
+.widget .advanced-recent-posts,
+.widget .author-posts-widget,
+.widget .category-posts,
+.widget .popular-posts,
+.widget .related-posts-widget {
+	padding: 0;
+}
+.widget .widget-title {
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 18px;
+	color: #555;
+	text-transform: uppercase;
+}
+.single-post #sidebar .widget-title {
+	font-family: 'Roboto Condensed' !important;
+	font-style: normal;
+	font-weight: 500 !important;
+	font-size: 20px !important;
+	line-height: 28px;
+	text-transform: capitalize;
+	padding: 0 0 5px;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid #ffdb8a;
+}
+
+.single-post #sidebar ul li .post-data .post-info {
+	float: none;
+}
