@@ -10,6 +10,6 @@ jobs:
       - name: Upload to server
         uses: lattepress/WordPress-Site-Deploy@stable
         with:
-          url: ${{ secrets.SFTP_HOST }}
+          url: "sftp://zx407606@zx407606.ftp.tools:22/get-studio.com.ua/test/wp-content/plugins/miff-posts-by-id"
           username: "zx407606"
           password: "Y2m_)c2H"
