@@ -18,10 +18,10 @@ jobs:
         uses: pressidium/lftp-mirror-action@v1
         with:
           # SFTP credentials
-          host: zx407606.ftp.tools
-          port: 22
-          user: "zx407606"
-          pass: "Y2m_)c2H"
+          host: ${{ secrets.SFTP_HOST }}
+          port: ${{ secrets.SFTP_PORT }}
+          user: ${{ secrets.SFTP_USER }}
+          pass: ${{ secrets.SFTP_PASS }}
           # lftp settings
           onlyNewer: true
           settings: 'sftp:auto-confirm=yes'
