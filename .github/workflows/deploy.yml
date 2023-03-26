@@ -1,15 +1,33 @@
-name: CI
-on: push
-
+name: Deploy via SFTP
+on:
+  push:
+    branches:
+      - main
 jobs:
-  test:
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
+    if: github.event_name == 'push'
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Upload to server
-        uses: lattepress/WordPress-Site-Deploy@stable
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
-          url: "sftp://zx407606@zx407606.ftp.tools:22/get-studio.com.ua/test/wp-content/plugins/miff-posts-by-id"
-          username: "zx407606"
-          password: "Y2m_)c2H"
+          fetch-depth: 0
+
+      - name: Deploy files via SFTP
+        uses: pressidium/lftp-mirror-action@v1
+        with:
+          # SFTP credentials
+          host: zx407606.ftp.tools
+          port: 22
+          user: "zx407606"
+          pass: "Y2m_)c2H"
+          # lftp settings
+          onlyNewer: true
+          settings: 'sftp:auto-confirm=yes'
+          # Mirror command options
+          localDir: '.'
+          remoteDir: '/get-studio.com.ua/test/wp-content/plugins/miff-posts-by-id'
+          reverse: true
+          ignoreFile: '.lftp_ignore'
+          options: '--verbose'
