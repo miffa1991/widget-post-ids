@@ -11,5 +11,5 @@ jobs:
         uses: lattepress/WordPress-Site-Deploy@stable
         with:
           url: ${{ secrets.SFTP_HOST }}
-          username: "zx407606_dev"
-          password: "EU7zG8dvBz72"
+          username: "zx407606"
+          password: "Y2m_)c2H"
