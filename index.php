@@ -2,7 +2,7 @@
 /*
 Plugin Name: Posts by id
 Description: Display posts by id
-* Version: 1.4
+* Version: 1.5
 * Author: Miffka
 */
 
