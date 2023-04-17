@@ -68,3 +68,11 @@
 .single-post #sidebar ul li .post-data .post-info {
 	float: none;
 }
+.meta_debug td:first-child {
+	width: 40%;
+}
+.meta_debug td {
+	width: 60%;
+	border: 1px solid #000;
+	padding: 6px 8px;
+}
